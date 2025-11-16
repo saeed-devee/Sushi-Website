@@ -269,41 +269,96 @@ ul li {
 
 /* END: hero media queries */
 
+/* START: about us media queries */
+@media screen and (max-width: 500px) {
+  .about-us__image .about-us__image-sushi3 img,
+  .about-us__image .about-us__image-sushi2 img{
+    width: 160px;
+    margin: 0 auto;
+  }
+  .about-us__image .about-us__button {
+    padding: 20px 30px;
+    font-size: 15px;
+  }
+  .about-us__image .about-us__button img{
+    padding-left: 15px;
+  }
+  .about-us__content .about-us__subtitle{
+    padding-left: 50px;
+  }
+  .about-us__content .about-us__title{
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 0;
+  }
+  .about-us__content .about-us__description{
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0 30px;
+  }
+}
+/* END: about us media queries */
+
 /* START: popular media queries */
 @media screen and (max-width: 550px) {
   .popular-foods {
     padding: 64px 32px;
   }
-
-  .popular-foods__card,
-  .popular-foods__card.active-card {
+  .popular-foods .popular-foods__title{
+    font-size: 27px;
+    line-height: 60px;
+    text-align: left;
+  }
+  .popular-foods .popular-foods__filters{
+    overflow-x: scroll;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .popular-foods .popular-foods__filters-btn{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px ;
+    justify-content: center;
+  }
+  .popular-foods__catalogue .popular-foods__card.active-card {
     min-width: 100%;
   }
+  .popular-foods__catalogue .popular-foods__card-detail .popular-foods__card-rating img{
+    width: 22px;
+    height: 22px;
+  }
+  .popular-foods .popular-foods__exploreBtn{
+    margin: 50px auto 10px;
+  }
 }
-
 /* END: popular media queries */
+
 
 /* START: subscribe media queries */
 @media screen and (max-width: 550px) {
   .subscription {
-    padding: 64px 32px;
+    padding: 64px 32px !important;
   }
 
   .subscription h2 {
-    font-size: 68px;
-    line-height: 100px;
+    font-size: 68px !important;
+    line-height: 100px !important;
   }
 
-  .subscription__form {
+  .subscription .subscription__form {
     flex-direction: column;
     gap: 20px;
-
-    min-width: 100%;
-    border-radius: 20px;
+    min-width: 80%;
+    padding: 0 30px;
     padding: 0;
-
+    border-radius: 20px;
     border: none;
-  }
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
 
   .subscription__form input {
     min-height: 50px;
@@ -322,7 +377,7 @@ ul li {
 
 /* START: trending media queries */
 @media screen and (max-width: 1024px) {
-  .trending-sushi {
+  .trending .trending-sushi {
     flex-direction: column;
   }
 
@@ -335,7 +390,16 @@ ul li {
     background-size: cover;
   }
 
-  .trending__discover {
+  .trending__content .sushi__title,.trending__content .sushi__subtitle,.trending__content .sushi__description{
+    text-align: center;
+  }
+
+  .trending__content .trending__list li{
+    margin-left: 60px;
+  }
+
+
+  .trending .trending__discover {
     display: none;
   }
 
@@ -345,13 +409,13 @@ ul li {
 }
 
 @media screen and (max-width: 550px) {
-  .trending__image img {
-    width: 70%;
-    height: 70%;
-  }
 
-  .trending__content {
-    padding: 32px;
+  .trending-sushi .trending__image img, .trending-drinks .trending__image img{
+    width: 200px;
+    height: 200px;
+  }
+  .trending .trending-drinks{
+    flex-direction: column-reverse;
   }
 }
 
