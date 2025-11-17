@@ -39,6 +39,11 @@
     cursor: pointer;
 }
 
+.footer__social{
+    display: flex;
+    gap: 10px;
+}
+
 .footer__social li{
     background-color: var(--secondary-color);
     width: 42px;
@@ -53,4 +58,7 @@
     width: 45%;
     height: 45%;
     object-fit: contain;
+}
+.footer__copyright{
+    display: none;
 }
