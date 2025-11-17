@@ -271,7 +271,42 @@ ul li {
 /* END: hero media queries */
 
 /* START: about us media queries */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1024px) {
+  .about-us {
+    margin-top: 30px;
+  }
+
+  .about-us .about-us__image {
+    flex-direction: row;
+  }
+
+  .about-us .about-us__image img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+
+  .about-us .about-us__image-sushi3 {
+    border-bottom: none;
+  }
+
+  .about-us__content .about-us__subtitle {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .about-us__content .about-us__title {
+    font-size: 44px;
+  }
+
+  .about-us__content .about-us__description {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 550px) {
 
   .about-us__image .about-us__image-sushi3 img,
   .about-us__image .about-us__image-sushi2 img {
@@ -308,6 +343,17 @@ ul li {
 /* END: about us media queries */
 
 /* START: popular media queries */
+@media screen and (max-width:1024px) {
+  .popular-foods .popular-foods__filters{
+    overflow-x: scroll;
+    gap: 18px;
+    padding-left: 130px;
+  }
+  .popular-foods__filters .popular-foods__filters-btn{
+    padding: 10px 20px;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .popular-foods {
     padding: 64px 32px;
@@ -351,6 +397,11 @@ ul li {
 
 
 /* START: subscribe media queries */
+@media screen and (max-width: 1024px) {
+  .subscription .subscription__form{
+    padding: 10px 10px 10px 20px;
+  }
+}
 @media screen and (max-width: 550px) {
   .subscription {
     padding: 64px 32px !important;
@@ -392,8 +443,8 @@ ul li {
 
 /* START: trending media queries */
 @media screen and (max-width: 1024px) {
-  .trending .trending-sushi {
-    flex-direction: column;
+  .trending .trending__content {
+    padding: 32px 60px;
   }
 
   .trending-drink {
@@ -441,13 +492,20 @@ ul li {
 /* END: trending media queries */
 
 /* START: footer media queries */
-
+@media screen and (max-width: 1024px){
+  .footer{
+    padding: 20px;
+  }
+  .footer .footer__social{
+    gap: 5px;
+  }
+}
 @media screen and (max-width: 550px) {
   .footer .footer__nav {
     display: none;
   }
 
-  .footer .footer__social{
+  .footer .footer__social {
     display: none;
   }
 
