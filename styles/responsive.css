@@ -149,8 +149,15 @@
 
     .about-us__image .about-us__image-sushi3 img,
     .about-us__image .about-us__image-sushi2 img {
-        width: 160px;
+        width: 130px;
+        height: 130px;
+        object-fit: contain;
         margin: 0 auto;
+    }
+
+    .about-us__image .about-us__image-sushi2, 
+    .about-us__image .about-us__image-sushi3{
+        padding: 30px 0;
     }
 
     .about-us__image .about-us__button {
@@ -161,15 +168,13 @@
     .about-us__image .about-us__button img {
         padding-left: 15px;
     }
-
-    .about-us__content .about-us__subtitle {
-        padding-left: 50px;
+    .about-us__content .about-us__subtitle{
+        font-size: 16px;
     }
-
     .about-us__content .about-us__title {
-        font-size: 36px;
+        font-size: 30px;
         font-weight: 500;
-        margin-top: 0;
+        margin: 0 10px;
     }
 
     .about-us__content .about-us__description {
@@ -182,13 +187,20 @@
 /* END: about us media queries */
 
 /* START: popular media queries */
-@media screen and (max-width:1024px) {
-    .popular-foods .popular-foods__filters {
-        overflow-x: scroll;
-        gap: 18px;
-        padding-left: 360px;
+@media screen and (max-width: 1120px) {
+    .popular-foods .popular-foods__catalogue{
+        flex-wrap: nowrap;
     }
+}
 
+@media screen and (max-width:1000px) {
+    .popular-foods .popular-foods__filters {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .popular-foods .popular-foods__catalogue{
+        flex-wrap: wrap;
+    }
     .popular-foods__filters .popular-foods__filters-btn {
         padding: 10px 20px;
     }
@@ -206,9 +218,7 @@
     }
 
     .popular-foods .popular-foods__filters {
-        overflow-x: scroll;
         justify-content: center;
-        flex-direction: column;
         gap: 15px;
     }
 
